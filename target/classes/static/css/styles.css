@@ -1,0 +1,70 @@
+/* styles.css */
+
+
+:root {
+    --primary-color: #8891ba;
+    --hover-color: #697091;
+    --secondary-color: #293051;
+    --background-color: #f4f4f4;
+    --text-color: white;
+}
+
+/* Apply the custom properties */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color); 
+    margin: 20px;
+    padding: 0;
+}
+
+ 
+nav { 
+    background-color: var(--primary-color);
+    overflow: hidden;
+    margin:  -20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: var(--hover-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid var(--primary-color);
+}
+
+table th {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 8px;
+    border: 1px solid var(--primary-color);
+}
+
+table td {
+    padding: 8px;
+    border: 1px solid var(--primary-color);
+}   
+
+
+
+/* end of styles.css */

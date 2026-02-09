@@ -1,0 +1,51 @@
+<!-- Edit Order Form -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <title>Edit Order</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1>Edit Order</h1>
+
+    <form th:action="@{/orders/edit/{id}(id=${order.id})}"
+          th:object="${order}"
+          method="post"
+          enctype="multipart/form-data">
+
+        <input type="hidden" th:field="*{id}" />
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" th:field="*{date}"/>
+        <br/>
+
+        <label for="customerid">Customer ID:</label>
+        <input type="text" id="customerid" th:field="*{customerid}"/>
+        <br/>
+
+        <label for="notes">Notes:</label>
+        <textarea id="notes" th:field="*{notes}"></textarea>
+        <br/>
+
+        <!-- show current image -->
+        <div th:if="${order.pictureUrl}">
+            <p>Current Image:</p>
+            <img th:src="${order.pictureUrl}" alt="Order image" style="max-width:300px;"/>
+            <br/>
+        </div>
+
+        <!-- NEW: upload replacement -->
+        <label for="imageFile">Replace Image:</label>
+        <input type="file" id="imageFile" name="imageFile" accept="image/*"/>
+        <br/>
+
+        <p th:if="${uploadError}" th:text="${uploadError}" style="color:red;"></p>
+
+
+        <button type="submit">Update Order</button>
+    </form>
+</div>
+</body>
+</html>

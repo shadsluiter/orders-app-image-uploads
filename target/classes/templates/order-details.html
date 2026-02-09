@@ -1,0 +1,33 @@
+<!-- Display order with pic and details -->
+ 
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+<head>
+    <title>Edit Order</title>
+</head>
+<body>
+    <div layout:fragment="content">
+    <h1>Details of One Order</h1> 
+    
+    <div th:if="${order}">
+        <h2>Order Details</h2>
+         <label>Order ID:</label> <span th:text="${order.id}"></span><br/>
+         <label>Date:</label> <span th:text="${#dates.format(order.date, 'dd-MMM-yyyy')}"></span><br/>
+         <label>Customer ID:</label> <span th:text="${order.customerid}"></span><br/>
+         <label>Notes:</label> <span th:text="${order.notes}"></span><br/>
+         <label>Image:</label>  
+        <!-- <img th:src="${order.image}" alt="Image" height="100"> append image filder-->
+         <img th:src="${ order.pictureUrl}" alt="Image" height="100">  <br/>
+         <p>Right click the image and open in new tab to see high resolution. Be sure to type something nice.</p>
+ 
+
+            <a th:href="@{/orders/edit/{id}(id=${order.id})}">Edit Order</a>
+            <a th:href="@{/orders/delete/{id}(id=${order.id})}">Delete Order</a>
+    </div>
+    <div th:if="${error}">
+        <p th:text="${error}"></p>  
+    </div>
+    </div>
+  
+</body>
+</html>

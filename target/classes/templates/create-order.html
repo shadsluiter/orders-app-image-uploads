@@ -1,0 +1,39 @@
+<!-- create-order.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+<head>
+    <title>Create Order</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1>Create Order</h1>
+
+    <form th:action="@{/orders/create}" th:object="${order}" method="post" enctype="multipart/form-data">
+
+        <label for="customerid">Customer ID:</label>
+        <input type="text" id="customerid" th:field="*{customerid}"/>
+        <br/>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" th:field="*{date}"/>
+        <br/>
+
+        <label for="notes">Notes:</label>
+        <textarea id="notes" th:field="*{notes}"></textarea>
+        <br/>
+
+        <!-- NEW: file upload -->
+        <label for="imageFile">Upload Image:</label>
+        <input type="file" id="imageFile" name="imageFile" accept="image/*"/>
+        <br/>
+
+        <!-- Optional: keep URL field if you still want manual entry -->
+        <!-- <label for="pictureUrl">Picture URL:</label>
+        <input type="text" id="pictureUrl" th:field="*{pictureUrl}"/>
+        <br/> -->
+
+        <button type="submit">Create Order</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+/Users/shadsluiter/Documents/_cst-407 revision/2024 revision/applications/springbootsession/ordersap with session v2/src/main/java/com/shadsluiter/ordersapp/OrdersappApplication.java
+/Users/shadsluiter/Documents/_cst-407 revision/2024 revision/applications/springbootsession/ordersap with session v2/src/main/java/com/shadsluiter/ordersapp/config/SecurityConfig.java
+/Users/shadsluiter/Documents/_cst-407 revision/2024 revision/applications/springbootsession/ordersap with session v2/src/main/java/com/shadsluiter/ordersapp/controllers/OrdersController.java
+/Users/shadsluiter/Documents/_cst-407 revision/2024 revision/applications/springbootsession/ordersap with session v2/src/main/java/com/shadsluiter/ordersapp/controllers/UsersController.java
+/Users/shadsluiter/Documents/_cst-407 revision/2024 revision/applications/springbootsession/ordersap with session v2/src/main/java/com/shadsluiter/ordersapp/data/OrderRepository.java
+/Users/shadsluiter/Documents/_cst-407 revision/2024 revision/applications/springbootsession/ordersap with session v2/src/main/java/com/shadsluiter/ordersapp/data/UserRepository.java
+/Users/shadsluiter/Documents/_cst-407 revision/2024 revision/applications/springbootsession/ordersap with session v2/src/main/java/com/shadsluiter/ordersapp/models/OrderEntity.java
+/Users/shadsluiter/Documents/_cst-407 revision/2024 revision/applications/springbootsession/ordersap with session v2/src/main/java/com/shadsluiter/ordersapp/models/OrderModel.java
+/Users/shadsluiter/Documents/_cst-407 revision/2024 revision/applications/springbootsession/ordersap with session v2/src/main/java/com/shadsluiter/ordersapp/models/UserEntity.java
+/Users/shadsluiter/Documents/_cst-407 revision/2024 revision/applications/springbootsession/ordersap with session v2/src/main/java/com/shadsluiter/ordersapp/models/UserModel.java
+/Users/shadsluiter/Documents/_cst-407 revision/2024 revision/applications/springbootsession/ordersap with session v2/src/main/java/com/shadsluiter/ordersapp/service/OrderService.java
+/Users/shadsluiter/Documents/_cst-407 revision/2024 revision/applications/springbootsession/ordersap with session v2/src/main/java/com/shadsluiter/ordersapp/service/UserService.java
